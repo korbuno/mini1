@@ -17,8 +17,9 @@ public class ConnectionPool {
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				for (int i = 0; i < INIT_COUNT; i++) {
 					Connection con = DriverManager.getConnection(
-							"jdbc:oracle:thin:@localhost:1521:xe",
-							"mini", "mini"
+//							--,
+//							--,
+//							--
 						);
 					free.add(con);
 				}
